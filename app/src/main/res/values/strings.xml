@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">CiatProject</string>
+    <string name="ciatTitle">California Institute of Applied Technology</string>
+    <string name="ciatPhone">(877) 559-3621</string>
+    <string name="ciatAddress">401 Mile of Cars Way #100, National City, CA 91950</string>
+    <string name="ciatLogoDescription">CIAT Logo</string>
+    <string name="ciatBannerDescription">CIAT Banner</string>
+    <string name="ciatInfo">INFORMATION</string>
+    <string name="tvInfo">Information:</string>
+    <string name="btReturn">RETURN</string>
+    <string name="scrollDescription">Homepge Scroll Bar</string>
+    <string name="edisonTitle">Edison State Community College</string>
+    <string name="edisonAddress">1973 Edison Dr, Piqua, OH 45356</string>
+    <string name="edisonPhone">(937) 778-8600</string>
+    <string name="edisonBannerDescription">Edison Banner</string>
+    <string name="edisonLogoDescription">Edison Logo</string>
+    <string name="edisonInfo">INFORMATION</string>
+    <string name="unityTitle">Unity Environmental University</string>
+    <string name="unityAddress">70 Farm View Drive, Suite 200 New Gloucester, ME 04260</string>
+    <string name="unityPhone">(207) 509-7100</string>
+    <string name="unityInfo">INFORMATION</string>
+    <string name="unityBannerDescription">Unity Banner</string>
+    <string name="unityLogoDescription">Unity Logo</string>
+</resources>

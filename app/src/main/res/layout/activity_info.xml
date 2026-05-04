@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Info">
+
+    <TextView
+        android:id="@+id/ciatTitle"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:gravity="center"
+        android:text="@string/ciatTitle"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/CiatLogo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/CiatLogo"
+        android:layout_width="189dp"
+        android:layout_height="146dp"
+        android:contentDescription="@string/ciatLogoDescription"
+        app:layout_constraintBottom_toTopOf="@+id/tvInfo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ciatTitle"
+        app:srcCompat="@drawable/ciat_icon" />
+
+    <TextView
+        android:id="@+id/tvInfo"
+        android:layout_width="311dp"
+        android:layout_height="61dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="27dp"
+        android:text="@string/tvInfo"
+        android:textSize="35sp"
+        app:layout_constraintBottom_toTopOf="@+id/CiatPhone"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/CiatLogo" />
+
+    <TextView
+        android:id="@+id/CiatPhone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="31dp"
+        android:layout_marginBottom="22dp"
+        android:text="@string/ciatPhone"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/CiatAddress"
+        app:layout_constraintEnd_toEndOf="@+id/tvInfo"
+        app:layout_constraintTop_toBottomOf="@+id/tvInfo" />
+
+    <TextView
+        android:id="@+id/CiatAddress"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="37dp"
+        android:text="@string/ciatAddress"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/btReturn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/CiatPhone"
+        app:layout_constraintTop_toBottomOf="@+id/CiatPhone" />
+
+    <Button
+        android:id="@+id/btReturn"
+        android:layout_width="184dp"
+        android:layout_height="72dp"
+        android:layout_marginBottom="176dp"
+        android:backgroundTint="#2D5AAA"
+        android:text="@string/btReturn"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/CiatAddress" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
