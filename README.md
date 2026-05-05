@@ -1,6 +1,12 @@
-# School Info App — Week 1 Hands-On Exercise
+# School Info App
 
-**Course:** Android Development  
+---
+
+## Week 1 — Hands-On Exercise: Your School App
+
+---
+
+## Week 2 — Assignment: Your School App Part II
 
 ---
 
@@ -58,7 +64,22 @@ This app provides information about schools in your country. It allows users to 
 
 ---
 
+## Part II — New Features
+
+### Map Integration
+
+- Each school details screen includes a **map view** showing the school's location.
+- When a school is selected, users can view its location on a map and get directions.
+
+### School Highlights and Updates Section
+
+- Each school entry includes a section displaying **notable highlights** or **upcoming events**.
+
+---
+
 ## Assignment Submission Requirements
+
+For each assignment, attach the two required files to your submission:
 
 1. **MS Word file** — Copy/paste your code and output screenshots.
 2. **Source files** — Attach the project source files.
