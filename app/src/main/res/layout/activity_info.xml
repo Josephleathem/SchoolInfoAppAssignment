@@ -1,83 +1,108 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/main"
+    android:id="@+id/ciatInfoScroll"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:scrollbars="vertical"
     tools:context=".Info">
 
-    <TextView
-        android:id="@+id/ciatTitle"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:gravity="center"
-        android:text="@string/ciatTitle"
-        android:textSize="40sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/CiatLogo"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <ImageView
-        android:id="@+id/CiatLogo"
-        android:layout_width="189dp"
-        android:layout_height="146dp"
-        android:contentDescription="@string/ciatLogoDescription"
-        app:layout_constraintBottom_toTopOf="@+id/tvInfo"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/ciatTitle"
-        app:srcCompat="@drawable/ciat_icon" />
-
-    <TextView
-        android:id="@+id/tvInfo"
-        android:layout_width="311dp"
-        android:layout_height="61dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginBottom="27dp"
-        android:text="@string/tvInfo"
-        android:textSize="35sp"
-        app:layout_constraintBottom_toTopOf="@+id/CiatPhone"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/CiatLogo" />
-
-    <TextView
-        android:id="@+id/CiatPhone"
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="31dp"
-        android:layout_marginBottom="22dp"
-        android:text="@string/ciatPhone"
-        android:textSize="30sp"
-        app:layout_constraintBottom_toTopOf="@+id/CiatAddress"
-        app:layout_constraintEnd_toEndOf="@+id/tvInfo"
-        app:layout_constraintTop_toBottomOf="@+id/tvInfo" />
+        android:orientation="vertical"
+        android:padding="16dp">
 
-    <TextView
-        android:id="@+id/CiatAddress"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_marginBottom="37dp"
-        android:text="@string/ciatAddress"
-        android:textSize="30sp"
-        app:layout_constraintBottom_toTopOf="@+id/btReturn"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="@+id/CiatPhone"
-        app:layout_constraintTop_toBottomOf="@+id/CiatPhone" />
+        <TextView
+            android:id="@+id/ciatTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/ciatTitle"
+            android:textColor="#0868CE"
+            android:textSize="40sp"
+            android:textStyle="bold" />
 
-    <Button
-        android:id="@+id/btReturn"
-        android:layout_width="184dp"
-        android:layout_height="72dp"
-        android:layout_marginBottom="176dp"
-        android:backgroundTint="#2D5AAA"
-        android:text="@string/btReturn"
-        android:textSize="24sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/CiatAddress" />
+        <ImageView
+            android:id="@+id/CiatLogo"
+            android:layout_width="189dp"
+            android:layout_height="146dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="8dp"
+            android:contentDescription="@string/ciatLogoDescription"
+            app:srcCompat="@drawable/ciat_icon" />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+        <TextView
+            android:id="@+id/tvInfo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@string/tvInfo"
+            android:textSize="35sp" />
+
+        <TextView
+            android:id="@+id/CiatPhone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/ciatPhone"
+            android:textSize="30sp" />
+
+        <TextView
+            android:id="@+id/CiatAddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/ciatAddress"
+            android:textSize="30sp" />
+
+        <Button
+            android:id="@+id/btMapView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:backgroundTint="#0868CE"
+            android:text="@string/btMapView"
+            android:textSize="24sp" />
+
+        <Button
+            android:id="@+id/btDirections"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:backgroundTint="#096AD2"
+            android:text="@string/btDirections"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/tvHighlights"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="@string/tvHighlights"
+            android:textSize="35sp" />
+
+        <TextView
+            android:id="@+id/ciatHighlights"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/ciatHighlights"
+            android:textSize="22sp" />
+
+        <Button
+            android:id="@+id/btReturn"
+            android:layout_width="184dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="24dp"
+            android:layout_marginBottom="16dp"
+            android:backgroundTint="#2D5AAA"
+            android:text="@string/btReturn"
+            android:textSize="24sp" />
+
+    </LinearLayout>
+
+</ScrollView>

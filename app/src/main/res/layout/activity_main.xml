@@ -67,6 +67,7 @@
             android:layout_marginTop="12dp"
             android:backgroundTint="#F7CF0B"
             android:text="@string/edisonInfo"
+            android:textColor="#FFFFFF"
             android:textSize="35sp" />
 
         <TextView
@@ -76,6 +77,7 @@
             android:layout_marginTop="20dp"
             android:gravity="center"
             android:text="@string/unityTitle"
+            android:textColor="#467F35"
             android:textSize="40sp"
             android:textStyle="bold" />
 

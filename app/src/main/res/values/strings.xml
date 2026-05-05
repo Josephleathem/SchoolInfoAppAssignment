@@ -21,4 +21,12 @@
     <string name="unityInfo">INFORMATION</string>
     <string name="unityBannerDescription">Unity Banner</string>
     <string name="unityLogoDescription">Unity Logo</string>
+
+    <string name="btMapView">VIEW ON MAP</string>
+    <string name="btDirections">GET DIRECTIONS</string>
+    <string name="tvHighlights">Highlights &amp; Upcoming Events:</string>
+
+    <string name="ciatHighlights">• Program Spotlight: New Cybersecurity &amp; Cloud Computing program launching Fall 2026\n\n• Upcoming Event: Open House – May 15, 2026\n\n• Achievement: CIAT graduates maintain a 90%+ job placement rate in tech fields</string>
+    <string name="edisonHighlights">• Upcoming Event: Summer Registration Open – May 10, 2026\n\n• Program Highlight: Nursing &amp; Allied Health programs ranked top in Ohio\n\n• Achievement: New STEM building opening September 2026</string>
+    <string name="unityHighlights">• Upcoming Event: Earth Week Celebration – May 12–16, 2026\n\n• Program Spotlight: Online Environmental Science degree now fully accredited\n\n• Achievement: Unity ranked #1 Most Sustainable Campus in New England</string>
 </resources>

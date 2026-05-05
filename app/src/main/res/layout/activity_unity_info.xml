@@ -1,90 +1,108 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/main"
+    android:id="@+id/unityInfoScroll"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Info">
+    android:fillViewport="true"
+    android:scrollbars="vertical"
+    tools:context=".unityInfo">
 
-    <TextView
-        android:id="@+id/unityTitle"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_marginStart="1dp"
-        android:layout_marginEnd="1dp"
-        android:layout_marginBottom="138dp"
-        android:gravity="center"
-        android:text="@string/unityTitle"
-        android:textSize="40sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/tvInfo"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <ImageView
-        android:id="@+id/unityLogo"
-        android:layout_width="188dp"
-        android:layout_height="131dp"
-        android:layout_marginTop="109dp"
-        android:layout_marginBottom="140dp"
-        android:contentDescription="@string/unityLogoDescription"
-        app:layout_constraintBottom_toTopOf="@+id/unityAddress"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/unity_logo" />
-
-    <TextView
-        android:id="@+id/tvInfo"
-        android:layout_width="309dp"
-        android:layout_height="41dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginBottom="27dp"
-        android:text="@string/tvInfo"
-        android:textSize="35sp"
-        app:layout_constraintBottom_toTopOf="@+id/unityPhone"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/unityTitle" />
-
-    <TextView
-        android:id="@+id/unityPhone"
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="30dp"
-        android:layout_marginBottom="22dp"
-        android:text="@string/unityPhone"
-        android:textSize="30sp"
-        app:layout_constraintBottom_toTopOf="@+id/unityAddress"
-        app:layout_constraintEnd_toEndOf="@+id/tvInfo"
-        app:layout_constraintTop_toBottomOf="@+id/tvInfo" />
+        android:orientation="vertical"
+        android:padding="16dp">
 
-    <TextView
-        android:id="@+id/unityAddress"
-        android:layout_width="322dp"
-        android:layout_height="107dp"
-        android:layout_marginStart="1dp"
-        android:layout_marginEnd="1dp"
-        android:layout_marginBottom="214dp"
-        android:text="@string/unityAddress"
-        android:textSize="30sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/unityTitle"
-        app:layout_constraintStart_toStartOf="@+id/unityPhone"
-        app:layout_constraintTop_toBottomOf="@+id/unityLogo" />
+        <TextView
+            android:id="@+id/unityTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/unityTitle"
+            android:textColor="#467F35"
+            android:textSize="40sp"
+            android:textStyle="bold" />
 
-    <Button
-        android:id="@+id/btReturn"
-        android:layout_width="184dp"
-        android:layout_height="70dp"
-        android:layout_marginBottom="97dp"
-        android:backgroundTint="#2D5AAA"
-        android:text="@string/btReturn"
-        android:textSize="24sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/unityAddress" />
+        <ImageView
+            android:id="@+id/unityLogo"
+            android:layout_width="188dp"
+            android:layout_height="131dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="8dp"
+            android:contentDescription="@string/unityLogoDescription"
+            app:srcCompat="@drawable/unity_logo" />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+        <TextView
+            android:id="@+id/tvInfo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@string/tvInfo"
+            android:textSize="35sp" />
+
+        <TextView
+            android:id="@+id/unityPhone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/unityPhone"
+            android:textSize="30sp" />
+
+        <TextView
+            android:id="@+id/unityAddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/unityAddress"
+            android:textSize="30sp" />
+
+        <Button
+            android:id="@+id/btMapView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:backgroundTint="#467F35"
+            android:text="@string/btMapView"
+            android:textSize="24sp" />
+
+        <Button
+            android:id="@+id/btDirections"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:backgroundTint="#5A9E43"
+            android:text="@string/btDirections"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/tvHighlights"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="@string/tvHighlights"
+            android:textSize="35sp" />
+
+        <TextView
+            android:id="@+id/unityHighlights"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/unityHighlights"
+            android:textSize="22sp" />
+
+        <Button
+            android:id="@+id/btReturn"
+            android:layout_width="184dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="24dp"
+            android:layout_marginBottom="16dp"
+            android:backgroundTint="#2D5AAA"
+            android:text="@string/btReturn"
+            android:textSize="24sp" />
+
+    </LinearLayout>
+
+</ScrollView>
